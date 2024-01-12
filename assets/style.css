@@ -56,10 +56,17 @@ header {
   height: 100vh;
 }
 
+nav a {
+  margin-left: 92%;
+}
+
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 5.2rem;
+  letter-spacing: 0.3rem;
 }
 
 p {
@@ -92,6 +99,7 @@ p {
 }
 
 .button-1 {
+  text-transform: uppercase;
   background-color: #ed4933;
   border-radius: var(--border-radius-button);
   color: var(--color-white);
@@ -99,6 +107,9 @@ p {
   line-height: 4.3rem;
   width: 15rem;
   letter-spacing: 0.3rem;
+  text-align: center;
+
+  font-weight: bold;
 }
 
 .style-1 {
@@ -116,7 +127,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 67vw;
+  width: 70%;
   text-align: center;
 }
 
@@ -154,14 +165,82 @@ p {
   padding: 3%;
 }
 
-.style-2 article div:nth-of-type(1) {
+.style-2 article:nth-of-type(1) {
   background-color: #2b343d;
 }
-/* -        ab hier greift es nicht????     */
-.style-2 article div:nth-of-type(2) {
+
+.style-2 article:nth-of-type(2) {
   background-color: #273038;
 }
 
-.style-2 article div:nth-of-type(3) {
+.style-2 article:nth-of-type(3) {
   background-color: #242b33;
+}
+
+.promise {
+  background-color: #505393;
+}
+
+.promise p {
+  color: #d3d4e4;
+}
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.promise-grid article {
+  text-align: left;
+  padding: 5rem;
+  background-color: #3f4274;
+}
+
+.contact {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  background-image: url(./img/Section_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 65vw;
+  margin: auto;
+}
+
+.contact-row article {
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f262c;
+}
+
+.socials {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+
+.socials a svg {
+  fill: white;
+}
+
+.socials a svg:hover {
+  fill: red;
+}
+
+.copyright-desktop {
+  margin: auto;
 }
