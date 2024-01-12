@@ -26,14 +26,15 @@ html {
 
 h1 {
   color: var(--color-white);
-  border-top-style: 1px solid;
-  border-bottom-style: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   border-color: var(--color-white);
   line-height: 5.3rem;
   letter-spacing: 0.7rem;
   font-size: 2.9rem;
   font-weight: bold;
-  padding-bottom: 4.7rem;
+  margin-bottom: 4.7rem;
+  padding: 1rem;
 }
 
 h2 {
@@ -44,7 +45,7 @@ h2 {
   letter-spacing: 0.5rem;
   font-size: 2.3rem;
   font-weight: bold;
-  padding-bottom: 4.7rem;
+  padding-bottom: 2.8rem;
   text-transform: uppercase;
 }
 
@@ -66,6 +67,11 @@ p {
   font-size: 1.7rem;
   line-height: 2.9rem;
   letter-spacing: 0.1rem;
+}
+
+.break::after {
+  content: "\A";
+  white-space: pre;
 }
 
 .landing {
@@ -116,6 +122,7 @@ p {
 
 .style-1 article p {
   color: #c8ece9;
+  padding-bottom: 5rem;
 }
 
 .logos-1 {
@@ -123,4 +130,38 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.style-2 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.style-2 article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.style-2 article img {
+  width: 40vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.style-2 article div {
+  padding: 3%;
+}
+
+.style-2 article div:nth-of-type(1) {
+  background-color: #2b343d;
+}
+/* -        ab hier greift es nicht????     */
+.style-2 article div:nth-of-type(2) {
+  background-color: #273038;
+}
+
+.style-2 article div:nth-of-type(3) {
+  background-color: #242b33;
 }
